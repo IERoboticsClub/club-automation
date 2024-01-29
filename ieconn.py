@@ -1,6 +1,6 @@
 import yaml
 from selenium import webdriver
-from ieconnects_login import login
+from ieconnects_login import login, DEFAULT_HYPER
 from ieconnect_club import open_club_page, open_events_page
 
 
@@ -9,14 +9,7 @@ with open("credentials.yaml") as f:
 username = credentials["username"]
 password = credentials["password"]
 
-HYPER = {
-    'origin': "https://ieconnects.ie.edu/login_only",
-    'first_uname_id': "i0116",
-    'second_password_id': "passwordInput",
-    'stay_signed_in_id': 'idSIButton9',
-    'club_id': "300003041",
-    'headless': False
-}
+HYPER = DEFAULT_HYPER
 
 # driver = webdriver.Firefox()
 # make it so that it can be run from the command line with the

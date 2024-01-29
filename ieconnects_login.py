@@ -58,3 +58,13 @@ def login(
     driver.implicitly_wait(10)
     print('LOGGED IN')
     return driver
+
+
+DEFAULT_HYPER = {
+    'origin': "https://ieconnects.ie.edu/login_only",
+    'first_uname_id': "i0116",
+    'second_password_id': "passwordInput",
+    'stay_signed_in_id': 'idSIButton9',
+    'club_id': "300003041",
+    'headless': False
+}
