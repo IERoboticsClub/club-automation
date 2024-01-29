@@ -1,0 +1,95 @@
+#Ariad projects are entirely declared in YAML. This includes defining the project's structure, Components, and their interactions. Here's an example of how a project can be declared:
+#
+#    The YAML file starts with the keyword Project: followed by the project details.
+#    The project details include:
+#        Name:: The name of the project.
+#        Description:: A brief description of the project.
+#        A list of components, each starting with a unique identifier like C_Backend: or C_Frontend:.
+#    Each component has:
+#        Name:: The name of the component.
+#        Description:: A brief description of the component.
+#        A list of parts, each starting with a unique identifier like P_AddProduct: or P_GetProduct:.
+#    Each part has:
+#        Name:: The name of the part.
+#        Description:: A brief description of the part.
+#        Input:: The input details, which include:
+#            Name:: The name of the input.
+#            Type:: The type of the input.
+#            Description:: A brief description of the input.
+#            Properties:: The properties of the input, each with a Name:, Type:, and Description:.
+#            Value:: The value of the input.
+#        Output:: The output details, similar to the input details.
+#    Each component also has a GLUE: section that describes the flow of data between the parts. It includes:
+#        Graph:: The flow of data, represented as Part1 -> Part2.
+#        Description:: A brief description of the data flow.
+
+Project:
+  Name: "IE Connects Automation"
+  Description: "A set of scripts applied to the IE Connects website while making use of selenium and python"
+  C_Login:
+    Name: "Login Component"
+    Description: "Login Component to handle the login process for the IE Connects website"
+    P_ClickIeLogin:
+        Name: "Click IE Login"
+        Description: "Clicks the IE Login button on the IE Connects website"
+        # both input and output are drivers for the selenium webdriver
+        Input:
+            Name: "Driver"
+            Type: "WebDriver"
+            Description: "The selenium webdriver"
+            Value: "driver"
+        Output:
+            Name: "Driver"
+            Type: "WebDriver"
+            Description: "The selenium webdriver"
+            Value: "driver"
+
+    P_InputUsername:
+        Name: "Input Username"
+        Description: "Inputs the username into the username field on the IE Connects website"
+        Input:
+            Name: "Driver"
+            Type: "WebDriver"
+            Description: "The selenium webdriver"
+            Value: "driver"
+        Output:
+            Name: "Driver"
+            Type: "WebDriver"
+            Description: "The selenium webdriver"
+            Value: "driver"
+
+    P_InputPassword:
+      Name: "Input Password"
+      Description: "Inputs the password into the password field on the IE Connects website"
+      Input:
+        Name: "Driver"
+        Type: "WebDriver"
+        Description: "The selenium webdriver"
+        Value: "driver"
+      Output:
+        Name: "Driver"
+        Type: "WebDriver"
+        Description: "The selenium webdriver"
+        Value: "driver"
+
+    P_StayLoggedIn:
+      Name: "Stay Logged In"
+      Description: "Clicks the stay logged in button on the IE Connects website"
+      Input:
+        Name: "Driver"
+        Type: "WebDriver"
+        Description: "The selenium webdriver"
+        Value: "driver"
+      Output:
+        Name: "Driver"
+        Type: "WebDriver"
+        Description: "The selenium webdriver"
+        Value: "driver"
+
+    GLUE:
+      Graph: "P_ClickIeLogin -> P_InputUsername -> P_InputPassword -> P_StayLoggedIn"
+      Description: "The flow of data between the parts of the Login Component"
+
+
+
+
