@@ -29,3 +29,9 @@ def open_events_page(driver, past_events=False):
     return driver
 
 
+def download_excel(driver):
+    """
+    Download the excel file
+    """
+    print("DOWNLOADING EXCEL FILE")
+    driver.get("https://ieconnects.ie.edu/events_attendees?show=past")

@@ -15,7 +15,7 @@ def fill_first_input(driver):
     input = driver.find_element(By.ID,HYPER["first_uname_id"])
     input.send_keys(username)
     input.send_keys(Keys.CONTROL, Keys.ENTER)
-    driver.implicitly_wait(3)
+    driver.implicitly_wait(5)
     return driver
 
 def fill_second_input(driver):
