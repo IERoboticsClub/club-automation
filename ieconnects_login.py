@@ -66,5 +66,5 @@ DEFAULT_HYPER = {
     'second_password_id': "passwordInput",
     'stay_signed_in_id': 'idSIButton9',
     'club_id': "300003041",
-    'headless': False
+    'headless': False # Use headless for GH Actions
 }

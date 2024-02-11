@@ -9,7 +9,7 @@ def open_club_page(driver, club_id):
     print("OPENING CLUB PAGE")
     redirect_link = f"https://ieconnects.ie.edu/officer_login_redirect?club_id={club_id}"
     driver.get(redirect_link)
-    driver.implicitly_wait(3)
+    driver.implicitly_wait(5)
     print("OPENED CLUB PAGE")
 
 
