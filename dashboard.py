@@ -13,6 +13,8 @@ with open("automations.yaml") as f:
 automation_names = list(automations.keys())
 automation_name = st.selectbox("Select an automation to schedule", automation_names)
 
+#TODO add whatsapp message drafter
+
 # automation arguments
 automation = automations[automation_name]
 args = automation["arguments"]
