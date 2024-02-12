@@ -1,0 +1,20 @@
+whatsapp:
+  arguments:
+    - recipients [list]
+    - message [str]
+  template: >-
+    from communications.whatsapp import Whatsapp ;
+    whatsapp = Whatsapp(
+        user_directory_path="/home/velocitatem/.config/google-chrome/Profile 1",
+        headless=True,
+        driver_path="/home/velocitatem/Downloads/software/chromedriver_linux64.zip"
+    ) ;
+    whatsapp.broadcast_message({recipients},{message})
+
+
+email:
+  arguments:
+    - recipients [list]
+    - subject [str]
+    - content [str]
+  template: >-
