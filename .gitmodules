@@ -1,0 +1,3 @@
+[submodule "whatsapp-automation"]
+	path = whatsapp-automation
+	url = https://github.com/IERoboticsClub/whatsapp-automation
