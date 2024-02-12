@@ -1,3 +1,6 @@
+![PlantUML Diagram](http://www.plantuml.com/plantuml/png/LSx12i8m30RW-vuYzxx4HftWGH0yU8vjM0jjMfhKvxSwXdXCyltXdqMnQOxiCzR9W4tz2KlNab5ZuSaOU0HKMUguZk5A8hWHt1fLR8VvxUykaEyfylQ9NbQmXPcSobUj6MFwVs_WX8fm9dLXf7Rs8bQmZNOq4_kZuHi0)
+
+
 # Automation
 
 This project contains Python scripts to automate various tasks on the IEConnects platform. The scripts use Selenium WebDriver to interact with the website and perform tasks such as logging in, navigating to club and events pages, etc.
