@@ -1,1 +1,0 @@
-../whatsapp-automation/app.py
