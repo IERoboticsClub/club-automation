@@ -3,7 +3,7 @@ whatsapp:
     - recipients [list]
     - message [str]
   template: >-
-    from communications.whatsapp import Whatsapp ;
+    from whatsapp_automation.whatsapp import Whatsapp;
     whatsapp = Whatsapp(
         user_directory_path="/home/velocitatem/.config/google-chrome/Profile 1",
         headless=True,
