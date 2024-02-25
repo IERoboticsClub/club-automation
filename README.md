@@ -11,4 +11,5 @@ Club Automation
   News
     Post Generator
     Link Scraper
+  Research
 ```
