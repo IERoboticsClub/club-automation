@@ -1,3 +1,6 @@
 [submodule "whatsapp_automation"]
 	path = whatsapp_automation
 	url = https://github.com/IERoboticsClub/whatsapp-automation
+[submodule "LinkedIn_Automation"]
+	path = LinkedIn_Automation
+	url = https://github.com/IsmaPi/LinkedIn_Automation
